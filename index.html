@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="theme-color" content="#1E3A8A">
+
+    <meta name="description"
+        content="Menú virtual de Pastelitos Time. Consulta nuestros pastelitos, bebidas y postres.">
+
+    <title>Menú | Pastelitos Time</title>
+
+    <!-- FUENTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <!-- ============================================================
+     HEADER
+============================================================ -->
+
+    <header>
+
+        <div class="header-inner">
+
+            <a href="#" class="brand">
+
+                <div class="logo">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+
+                <div class="brand-text">
+
+                    <div class="brand-name">
+                        Pastelitos Time
+                    </div>
+
+                    <div class="brand-subtitle">
+                        Menú virtual
+                    </div>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ============================================================
+     HERO
+============================================================ -->
+
+    <section class="hero">
+
+        <div class="hero-inner">
+
+            <h1>
+                Nuestro Menú
+            </h1>
+
+            <p>
+                Descubre nuestros pastelitos, bebidas y postres.
+                La disponibilidad se actualiza automáticamente.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================================================
+     CONTENIDO
+============================================================ -->
+
+    <main>
+
+
+        <!-- CATEGORÍAS (100% generadas por JS) -->
+
+        <div class="categories" id="categories"></div>
+
+
+        <!-- ESTADO FIREBASE -->
+
+        <div class="connection-status">
+
+            <span class="connection-dot loading" id="connectionDot">
+            </span>
+
+            <span id="connectionText">
+                Conectando con el menú...
+            </span>
+
+        </div>
+
+
+        <!-- CONTENEDOR -->
+
+        <div id="menuContainer">
+
+            <div class="loading">
+
+                <div class="loading-spinner"></div>
+
+                <p>
+                    Cargando menú...
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- ============================================================
+     FOOTER
+============================================================ -->
+
+    <footer>
+
+        <div class="footer-brand">
+            Pastelitos Time
+        </div>
+
+        <div class="footer-text">
+            Pastelitos · Empanadas · Tequeños · Bebidas · Postres
+        </div>
+
+        <div class="footer-copy">
+            © <span id="year"></span> Pastelitos Time. Todos los derechos reservados.
+        </div>
+
+    </footer>
+
+
+    <!-- ============================================================
+     WHATSAPP
+============================================================ -->
+
+    <a class="whatsapp-btn"
+        href="https://wa.me/16093361797?text=Hola%20Pastelitos%20Time%2C%20%C2%BFest%C3%A1s%20disponible%20en%20estos%20momentos%3F"
+        target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        <span class="whatsapp-tooltip">
+            ¿Estás disponible?
+        </span>
+
+    </a>
+
+
+    <!-- ============================================================
+     FIREBASE
+============================================================ -->
+
+    <script type="module" src="script.js"></script>
+
+
+</body>
+
+</html>
